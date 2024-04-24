@@ -1,0 +1,7 @@
+A(Start) --> |User inputs weight| B{weight entered?}
+B --> |Yes| C[Update weight table]
+C --> D{Goal achieved?}
+D --> |Yes| E[Display success message]
+D --> |No| F[Display encouragement message]
+F --> B
+B --> |No| A
